@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & News Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather & News Dashboard</h1>
+            <p>Stay informed with current weather and top news headlines</p>
+        </header>
+        
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="weather">Weather</button>
+            <button class="tab-btn" data-tab="news">News</button>
+        </div>
+        
+        <!-- Weather Tab -->
+        <div id="weather-tab" class="tab-content active">
+            <div class="search-container">
+                <input type="text" id="city-input" placeholder="Enter city name...">
+                <button id="search-weather-btn">Search</button>
+            </div>
+            
+            <div id="weather-container">
+                <!-- Weather data will be inserted here -->
+            </div>
+        </div>
+        
+        <!-- News Tab -->
+        <div id="news-tab" class="tab-content">
+            <div class="search-container">
+                <input type="text" id="news-input" placeholder="Search news (e.g., technology, politics)...">
+                <button id="search-news-btn">Search</button>
+            </div>
+            
+            <div id="news-container">
+                <!-- News data will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
